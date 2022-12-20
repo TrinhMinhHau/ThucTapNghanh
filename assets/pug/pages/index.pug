@@ -1,0 +1,51 @@
+extends ../layout/layout.pug
+
+block vars
+    -title= "Trang chu"
+block main
+    #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
+        .carousel-indicators
+            button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+            button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+            button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+        .carousel-inner.banner1
+            .carousel-item.active
+                img.w-100.responsive(src='./images/bnr-1.jpg' alt='...')
+                .carousel-caption.d-none.d-md-block
+            .carousel-item
+                img.w-100.responsive(src='./images/bnr-2.jpg' alt='...')
+                .carousel-caption.d-none.d-md-block
+            .carousel-item
+                img.w-100.responsive(src='./images/bnr-3.jpg' alt='...')
+                .carousel-caption.d-none.d-md-block
+        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.visually-hidden Next
+
+    .content
+        .best-beaty
+            .container
+                .row.mb-3.mt-5
+                    +product('./images/abt-1.jpg')   
+                    +product('./images/abt-2.jpg')
+                    +product('./images/abt-3.jpg')
+        // products
+        .grid
+            .container
+                .row.mb-3
+                    +grid('images/p-1.png','Smartwatch','270$','50%')
+                    +grid('images/p-2.png','Rolex','350$','30%')
+                    +grid('images/p-3.png','Patek Philippe','400$','10%')
+                    +grid('images/p-4.png','Audemars Piguet','500$','0%')
+                    
+                .row
+                    +grid('images/p-5.png','A.Lange & Söhne','260$','50%')
+                    +grid('images/p-6.png','Omega','340$','30%')
+                    +grid('images/p-7.png','Jaeger-LeCoultre','390$','10%')
+                    +grid('images/p-8.png','IWC Schaffhausen','490$','0%')
+
+
+

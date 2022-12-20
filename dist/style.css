@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.container-fluid {
+  font-family: "Times New Roman", Times, serif;
+}
+.container-fluid .responsive {
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
+}
+.container-fluid .header .header-top {
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-fluid .header .header-top .container .row i {
+  padding-left: 70%;
+}
+.container-fluid .header .header-mid {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid .header .header-bottom ul li a {
+  font-size: 120%;
+}
+.container-fluid .content .best-beaty {
+  margin-top: 2%;
+}
+.container-fluid .content .best-beaty .container {
+  height: 100%;
+}
+.container-fluid .content .best-beaty .best {
+  position: relative;
+  transition: 0.5s;
+}
+.container-fluid .content .best-beaty .best:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.container-fluid .content .best-beaty .best:hover .Hove {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 80%;
+  color: white;
+  -webkit-animation: abc 2s infinite ease-in-out;
+          animation: abc 2s infinite ease-in-out;
+}
+.container-fluid .content .best-beaty .best:hover {
+  opacity: 0.9;
+  z-index: 999;
+}
+.container-fluid .content .best-beaty .best .Hove {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  display: none;
+  transition: 0.5s;
+}
+.container-fluid .content .grid .container .dinhdang {
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid gray;
+  position: relative;
+}
+.container-fluid .content .grid .container .dinhdang:hover {
+  border-radius: 2px;
+  border: 1px solid #09092b;
+}
+.container-fluid .content .grid .container .dinhdang:hover img {
+  display: block;
+  margin-left: 25%;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.container-fluid .content .grid .container .dinhdang:hover .p {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+}
+.container-fluid .content .grid .container .dinhdang p,
+.container-fluid .content .grid .container .dinhdang h4,
+.container-fluid .content .grid .container .dinhdang i {
+  margin-left: 10%;
+}
+.container-fluid .content .grid .container .dinhdang:hover {
+  color: blue;
+  transition: 0.5s;
+}
+.container-fluid .content .grid .container img {
+  display: block;
+  margin-left: 25%;
+  margin-top: 5%;
+  transition: 0.5s;
+}
+.container-fluid .content .grid .container .p {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: none;
+}
+.container-fluid .footer {
+  margin-top: 20px;
+  margin-left: 70px;
+  color: gray;
+  margin-right: 200px;
+}
+.container-fluid .footer ul {
+  list-style: none;
+}
+.container-fluid .footer ul li {
+  margin-bottom: 10px;
+  font-size: medium;
+  cursor: pointer;
+}
+.container-fluid .footer ul li:hover {
+  margin-bottom: 10px;
+  font-size: medium;
+  color: blue;
+}
+.container-fluid .footer ul li a {
+  text-decoration: none;
+  color: gray;
+}
+.container-fluid .footer ul li a:hover {
+  margin-bottom: 10px;
+  font-size: medium;
+  color: blue;
+}
+.container-fluid .footer h3 {
+  padding-left: 30px;
+  color: black;
+}
+.container-fluid .footer p {
+  padding-left: 30px;
+  color: gray;
+}
+.container-fluid .footer h6 {
+  display: inline-block;
+}
+.container-fluid .footer .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 119px;
+}
+
+@-webkit-keyframes abc {
+  0% {
+    border-left: solid 1px red;
+  }
+  25% {
+    border-top: solid 1px red;
+  }
+  50% {
+    border-right: solid 1px red;
+  }
+  75% {
+    border-bottom: solid 1px red;
+  }
+  100% {
+    border: solid 1px red;
+  }
+}
+
+@keyframes abc {
+  0% {
+    border-left: solid 1px red;
+  }
+  25% {
+    border-top: solid 1px red;
+  }
+  50% {
+    border-right: solid 1px red;
+  }
+  75% {
+    border-bottom: solid 1px red;
+  }
+  100% {
+    border: solid 1px red;
+  }
+}
