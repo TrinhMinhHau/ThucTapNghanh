@@ -83,7 +83,6 @@
 }
 .container-fluid .content .grid .container .dinhdang:hover img {
   display: block;
-  margin-left: 25%;
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -104,7 +103,7 @@
 }
 .container-fluid .content .grid .container img {
   display: block;
-  margin-left: 25%;
+  margin: auto;
   margin-top: 5%;
   transition: 0.5s;
 }
@@ -116,20 +115,19 @@
 }
 .container-fluid .footer {
   margin-top: 20px;
-  margin-left: 70px;
   color: gray;
-  margin-right: 200px;
 }
 .container-fluid .footer ul {
   list-style: none;
+  display: inline-block;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 .container-fluid .footer ul li {
-  margin-bottom: 10px;
   font-size: medium;
   cursor: pointer;
 }
 .container-fluid .footer ul li:hover {
-  margin-bottom: 10px;
   font-size: medium;
   color: blue;
 }
@@ -138,17 +136,16 @@
   color: gray;
 }
 .container-fluid .footer ul li a:hover {
-  margin-bottom: 10px;
   font-size: medium;
   color: blue;
 }
 .container-fluid .footer h3 {
-  padding-left: 30px;
   color: black;
 }
 .container-fluid .footer p {
-  padding-left: 30px;
   color: gray;
+  display: block;
+  margin: 0px;
 }
 .container-fluid .footer h6 {
   display: inline-block;
