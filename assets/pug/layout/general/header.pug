@@ -19,21 +19,50 @@
         p.h2.text-bg-light LUXURY WATCHES
     // header-bottom
     .bg-light.header-bottom
-        nav.navbar.navbar-expand-sm.bg-light
+        nav.navbar.navbar-expand-md.bg-light
             .container
                 .logo
                     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#cola')
                         span.navbar-toggler-icon
                 #cola.collapse.navbar-collapse.justify-content-between
                     ul.navbar-nav
-                        li.nav-item
-                            a.nav-link(href='#') Trang ch&#x1EE7;
-                        li.nav-item
-                            a.nav-link(href='#') S&#x1EA3;n ph&#x1EA9;m
-                        li.nav-item
-                            a.nav-link(href='#') V&#x1EC1; ch&uacute;ng t&ocirc;i
-                        li.nav-item
-                            a.nav-link(href='#') Li&ecirc;n h&#x1EC7;
-                    form.d-flex
+                        li.nav-item.pe-3
+                            a.nav-link(href='#') Home
+                        li.dropdown.nav-item
+                            a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') Men
+                            ul.dropdown-menu(style='cursor:pointer')                           
+                                li.dropdown-item
+                                    a(href='products.html')
+                                    | Citizen
+                                li.dropdown-item
+                                    a(href='products.html')
+                                    | Casio
+                                li.dropdown-item
+                                    a(href='products.html')
+                                    |Seikoo
+                        li.dropdown.nav-item
+                            a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') Women
+                            ul.dropdown-menu(style='cursor:pointer')                           
+                                li.dropdown-item
+                                    a(href='products.html')
+                                    | Omega
+                                li.dropdown-item
+                                    a(href='products.html')
+                                    | Longines
+                                li.dropdown-item
+                                    a(href='products.html')
+                                    | Movado
+                        li.nav-item.pe-3
+                            a.nav-link(href='#') Product
+                        li.nav-item.pe-3
+                            a.nav-link(href='#') Contact
+                        li.nav-item.pe-3
+                            a.nav-link(href='#') Blog
+                        
+
+    
+
+
+                    form.d-flex.mt-1
                         input.form-control.me-2(type='text' placeholder='Search')
                         button.btn.btn-primary(type='button') Search
