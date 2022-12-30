@@ -6,7 +6,7 @@ $color2: gray;
   border: 0;
 }
 .container-fluid {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   .responsive {
     width: 100%;
     max-width: 2000px;
@@ -96,14 +96,18 @@ $color2: gray;
           left: 0;
           display: block;
         }
-        p,
-        h4,
-        i {
-          margin-left: 10%;
-        }
-        &:hover {
-          color: $color1;
-          transition: 0.5s;
+        a {
+          text-decoration: none;
+          color: #000;
+          p,
+          h4,
+          i {
+            margin-left: 10%;
+          }
+          &:hover {
+            color: $color1;
+            transition: 0.5s;
+          }
         }
       }
       img {
@@ -162,6 +166,23 @@ $color2: gray;
       justify-content: center;
       align-items: center;
       height: 119px;
+    }
+  }
+  section {
+    .small-img-group {
+      display: flex;
+      justify-content: center;
+    }
+
+    input {
+      width: 40px;
+      height: 30px;
+      padding-left: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    input:focus {
+      outline: none;
     }
   }
 }

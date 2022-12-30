@@ -5,10 +5,11 @@ mixin product(href)
             span Lorem ipsum dolor sit amet consectetur adipisicing elit.
 mixin grid(href,name,cost,percents)
         .dinhdang
-            img.img.mb-1(src= href)
-            h4.mb-1= name
-            p.mb-1 Details
-            i.fa-solid.fa-cart-shopping.mb-3
-            span= cost
-            p.p(style='background-color: aqua; border-radius: 3px;')
-                b= percents
+            a(href='details.html')
+                img.img.mb-1(src= href)
+                h4.mb-1= name
+                p.mb-1 Details
+                i.fa-solid.fa-cart-shopping.mb-3
+                span= cost
+                p.p(style='background-color: aqua; border-radius: 3px;')
+                    b= percents

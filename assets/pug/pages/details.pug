@@ -1,0 +1,37 @@
+extends ../layout/layout.pug
+
+block vars
+    -title= "Trang chu"
+block main
+    hr
+    section.container.sProduct.pt-5
+        .row
+            .col-lg-5.col-md-12.col-12
+                img#big_images.img-fluid.border(src='images/s-1.jpg' style='display: block' alt='' srcset='')
+                .small-img-group.mb-3
+                    .small-img-col
+                        img.small-img.border.me-2.mt-1(src='images/s-1.jpg' style='display: block; width: 100%' alt='')
+                    .small-img-col.mx-2.mt-1
+                        img.small-img.border(src='images/s-2.jpg' style='display: block; width: 100%' alt='')
+                    .small-img-col.mt-1
+                        img.small-img.border(src='images/s-3.jpg' style='display: block; width: 100%' alt='')
+            .col-lg-6.col-md-12.col-12
+                h6 Home / Details Product
+                h3.py-3.fw-bold Smart Watch
+                h2.mb-3 500$
+                select.form-select.text-bg-white.border-5.my-3.w-50
+                    option Select Size
+                    option XL
+                    option XXL
+                    option Small
+                    option Large
+                input.form-check-input(type='number' value='1' min='1')
+                button.btn.btn-danger Add To Cart
+                h3.mt-5.mb-5 Product Details
+                span
+                    | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                    | quaerat fugit voluptate! Cupiditate sint similique itaque voluptas
+                    | culpa porro quis quisquam, laudantium dignissimos quo enim aut,
+                    | facilis amet harum reiciendis.
+
+
