@@ -5,8 +5,9 @@ $color2: gray;
   margin: 0;
   border: 0;
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .container-fluid {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   .responsive {
     width: 100%;
     max-width: 2000px;
@@ -184,6 +185,33 @@ $color2: gray;
     input:focus {
       outline: none;
     }
+  }
+}
+@media screen and(max-width: 500px) {
+  .best {
+    width: 100%;
+  }
+  .res {
+    width: 100%;
+  }
+  .res1 {
+    width: 100%;
+  }
+}
+@media screen and(max-width: 800px) {
+  .Hove h1 {
+    font-size: 10px;
+  }
+  .Hove span {
+    font-size: 10px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  .Hove h1 {
+    font-size: small;
+  }
+  .Hove span {
+    font-size: small;
   }
 }
 
